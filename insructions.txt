@@ -1,0 +1,22 @@
+#  Models
+
+models then __init__
+In Models we create get and set for every attribute
+
+#  Services
+
+we need add in the services
+
+we create Interface (abstract class) and actual class of an entity both in Services
+interface will have which methods are must for a class
+
+Services wll create objects, call Model -> create object -> callall setter methods 
+        -> save the object to inMemory Data Structure DB
+
+# COntrollers
+
+Business logic will be in Controllers
+controllers is nearest to user
+we write actual business logic on controllers means add the amount to expense, subtract, get Balance etc
+
+We should design our controllers against Interfaces
