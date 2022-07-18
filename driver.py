@@ -34,4 +34,8 @@ contribution = {'user1':100, 'user2': 100, 'user3':100, 'user4':100, 'user5':100
 bill1 = billController.addBill('bill1', 'group1', 500, contribution, paidBy)
 
 balance = billController.getUserBalance('user1')
+
+mostDebt = billController.mostDebt(userController)
+
 print(balance)
+print(mostDebt)

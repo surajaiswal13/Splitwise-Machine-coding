@@ -19,3 +19,20 @@ class BillController(object):
                 balance = balance + bill.getPaidBy().get(userId)
 
         return balance
+
+    def mostDebt(self, userController):
+        
+        most_debt_user = None
+        most_debt = float('inf')
+
+        for i in userController.userService.userDetails:
+            # print(i)
+
+            bal = self.getUserBalance(i)
+
+            # most_debt = min(bal, most_debt)
+            if bal < most_debt:
+                most_debt = bal
+                most_debt_user = i
+
+        return [most_debt_user, most_debt]
