@@ -24,7 +24,7 @@ user4 = userController.addUser('user4', 'nishant')
 user5 = userController.addUser('user5', 'ds')
 
 members = [user1, user2, user3, user4, user5]
-group1 = groupController.addGroup('group', 'avengers', members)
+group1 = groupController.addGroup('group1', 'avengers', members)
 
 # print(group1.getMembers())
 
